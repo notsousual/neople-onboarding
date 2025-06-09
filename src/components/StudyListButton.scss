@@ -1,0 +1,25 @@
+.study-list-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #2f80ed;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background: #1c6dd0;
+    cursor: pointer;
+  }
+
+  &__label {
+    display: inline-block;
+    line-height: 1;
+  }
+}

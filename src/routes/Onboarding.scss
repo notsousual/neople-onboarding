@@ -1,0 +1,18 @@
+.onboarding {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+
+  align-items: center;
+  padding: 30px 10px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    max-width: 570px;
+  }
+}

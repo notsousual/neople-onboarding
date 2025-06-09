@@ -1,0 +1,35 @@
+.avatar {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+  & p {
+    font-size: 16px;
+
+    color: #000000;
+
+    font-weight: bold;
+  }
+}
+
+.video-avatar {
+  min-width: 80px;
+  min-height: 80px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  background: white;
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    transform: scale(1.2);
+    transform-origin: center top;
+    margin-top: 5px;
+  }
+}
