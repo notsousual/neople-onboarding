@@ -40,7 +40,7 @@ const StepTabs: React.FC<StepTabsProps> = ({ steps, ...props }) => {
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => navigate(`/${e.target.value}`);
 
   return (
-    <nav className="step-tabs-nav" {...props}>
+    <nav {...props}>
       {isMobile ? (
         <select className="step-tabs__dropdown" name={'learning steps navigation'} value={currentStep} onChange={handleSelectChange}>
           {stepKeys.map((step) => (
