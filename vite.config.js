@@ -1,8 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import svgr from 'vite-plugin-svgr';
-import netlify from '@netlify/vite-plugin';
+import svgr from '@svgr/rollup';
 
 export default defineConfig({
-  plugins: [react(), netlify(), svgr()],
+  plugins: [
+    react(),
+    svgr({
+      exportAsDefault: false,
+    }),
+  ],
 });
