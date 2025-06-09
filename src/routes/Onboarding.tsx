@@ -7,7 +7,7 @@ import animatedCharFallback from '/animated.mp4';
 
 import Avatar from '../components/Avatar';
 import { MessageBubbles } from '../components/MessageBubbles';
-import { OnboardingProgress } from '../components/OnBoardingProgress';
+import { OnboardingProgress } from '../components/OnboardingProgress';
 
 const Onboarding: React.FC = () => {
   return (
