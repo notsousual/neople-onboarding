@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import StepPage from './routes/StepPage';
 import TopNav from './components/TopNav';
 
-import Onboarding from './routes/Onboarding';
+import OnboardingPage from './routes/OnboardingPage';
 
 import './App.css';
-
-const steps = ['onboarding', 'training', 'answer-templates', 'knowledge'];
 
 function App() {
   return (
@@ -17,7 +15,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Navigate to="/onboarding" />} />
-          <Route path="onboarding" element={<Onboarding />} />
+          <Route path="onboarding" element={<OnboardingPage />} />
           <Route path="/:step" element={<StepPage />} />
           <Route path="/:step/:task" element={<StepPage />} />
         </Routes>

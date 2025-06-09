@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Onboarding.scss';
+import './OnboardingPage.scss';
 import { StudyList } from '../components/StudyList';
 import animatedChar from '/animated.webm';
 import animatedCharFallback from '/animated.mp4';
@@ -13,7 +13,7 @@ const Onboarding: React.FC = () => {
   return (
     <div className="onboarding">
       <div className="onboarding__wrapper">
-        <OnboardingProgress percentage={100} tasksLeft={2} />
+        <OnboardingProgress percentage={80} tasksLeft={2} />
         <Avatar webmSrc={animatedChar} fallbackSrc={animatedCharFallback} />
         <MessageBubbles />
         <StudyList />

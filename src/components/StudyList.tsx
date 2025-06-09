@@ -21,7 +21,7 @@ const studyItems: StudyItemType[] = [
 const statusLabelMap: Record<Status, string> = {
   [Status.NotStarted]: 'Teach',
   [Status.InProgress]: 'Continue',
-  [Status.Done]: 'Re-teach',
+  [Status.Done]: 'Reteach',
 };
 
 export const StudyList: React.FC = () => {
