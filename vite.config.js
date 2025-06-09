@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import svgr from '@svgr/rollup';
+import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    svgr(), // <- add this
-  ],
+  plugins: [react(), svgr()],
 });
